@@ -1,0 +1,42 @@
+.mainContainer {
+  display: flex;
+  margin: 10rem auto;
+  width: 60%;
+  justify-content: space-evenly;
+  gap: 1rem;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 3rem;
+}
+
+.mainContent h1 {
+  font-size: 5rem;
+  margin-bottom: 0;
+  color: hsl(233, 30%, 12%);
+}
+
+.mainContent p {
+  font: 16px;
+}
+
+.mainContent ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mainContent ul li {
+  display: flex;
+  gap: 1rem;
+}
+
+.mainContent ul li p {
+  margin: 1rem 0;
+}
