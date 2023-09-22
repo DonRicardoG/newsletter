@@ -1,0 +1,56 @@
+.thanksContainer {
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+  height: 40rem;
+  margin: 20rem auto;
+  background-color: hsl(0, 0%, 100%);
+  padding: 4rem 5rem;
+  border-radius: 3rem;
+}
+
+.thanksContainer img {
+  width: 50px;
+  margin: 0;
+}
+
+.thanksContainer h1 {
+  font-size: 4.5rem;
+  margin-bottom: 8px;
+  color: hsl(235, 18%, 26%);
+}
+
+.thanksContainer p {
+  margin-top: 3px;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: hsl(235, 18%, 26%);
+}
+
+.thanksContainer p span {
+  font-weight: bold;
+}
+
+.thanksContainer button {
+  height: 40px;
+  border: 1px solid transparent;
+  background: linear-gradient(
+    90deg,
+    hsl(234, 29%, 20%) 0%,
+    hsl(234, 29%, 20%) 54%,
+    hsl(234, 29%, 20%) 97%
+  );
+  color: hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+.thanksContainer button:hover {
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 84, 120, 1) 0%,
+    rgba(255, 98, 87, 1) 54%,
+    rgba(255, 62, 49, 1) 97%
+  );
+}

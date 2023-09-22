@@ -16,6 +16,14 @@
   border-radius: 1rem;
 }
 
+.inputError {
+  border: 0.5px solid rgba(255, 62, 49, 1) !important;
+}
+
+.inputError::placeholder {
+  color: rgba(255, 62, 49, 1) !important;
+}
+
 .formContainer input::placeholder {
   color: hsl(231, 7%, 60%);
 }
@@ -42,4 +50,14 @@
     rgba(255, 98, 87, 1) 54%,
     rgba(255, 62, 49, 1) 97%
   );
+}
+
+.error {
+  color: rgba(255, 62, 49, 1);
+}
+
+.formLabel {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }

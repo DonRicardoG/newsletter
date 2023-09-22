@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import Form from "../Form/Form";
+import Thanks from "../Thanks/Thanks";
 import listIcon from "../../assets/images/icon-list.svg";
 import desktopImg from "../../assets/images/illustration-sign-up-desktop.svg";
 import style from "./MainComponent.module.css";
 
 const Desktop = () => {
-  return (
+  const [email, setEmail] = useState("");
+  const [success, setSuccess] = useState(true);
+
+  return success === true ? (
+    <Thanks setSuccess={setSuccess} email={email} setEmail={setEmail} />
+  ) : (
     <div className={style.mainContainer}>
       <div className={style.mainContent}>
         <h1> Stay updated! </h1>
@@ -24,7 +30,7 @@ const Desktop = () => {
             <p>And much more!</p>
           </li>
         </ul>
-        <Form />
+        <Form setSuccess={setSuccess} email={email} setEmail={setEmail} />
       </div>
       <div>
         <img src={desktopImg} alt="desktop Image" />
