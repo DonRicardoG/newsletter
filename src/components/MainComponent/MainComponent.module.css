@@ -1,13 +1,15 @@
 .mainContainer {
   display: flex;
-  margin: 10rem auto;
-  width: 60%;
-  justify-content: space-evenly;
-  gap: 1rem;
-  align-items: center;
+  flex-direction: column-reverse;
   background-color: hsl(0, 0%, 100%);
-  padding: 2rem;
-  border-radius: 2rem;
+  height: 100%;
+}
+
+.mainImg {
+  background-image: url(../../assets/images/illustration-sign-up-mobile.svg);
+  width: 375px;
+  height: 250px;
+  border-radius: 1rem;
 }
 
 .mainContent {
@@ -18,13 +20,13 @@
 }
 
 .mainContent h1 {
-  font-size: 5rem;
+  font-size: 3.5rem;
   margin-bottom: 0;
   color: hsl(233, 30%, 12%);
 }
 
 .mainContent p {
-  font: 16px;
+  font: 14px;
 }
 
 .mainContent ul {
@@ -39,4 +41,36 @@
 
 .mainContent ul li p {
   margin: 1rem 0;
+}
+
+@media (min-width: 500px) {
+  .mainContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 10rem auto;
+    width: 60%;
+    justify-content: space-evenly;
+    gap: 1rem;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    padding: 2rem;
+    border-radius: 2rem;
+  }
+
+  .mainContent h1 {
+    font-size: 5rem;
+    margin-bottom: 0;
+    color: hsl(233, 30%, 12%);
+  }
+
+  .mainContent p {
+    font: 16px;
+  }
+
+  .mainImg {
+    background-image: url(../../assets/images/illustration-sign-up-desktop.svg);
+    height: 576px;
+    width: 50%;
+    border-radius: 1rem;
+  }
 }
